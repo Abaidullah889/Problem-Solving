@@ -37,7 +37,7 @@ class Result
                 hh = 0;
             }
 
-            string res = $"{hh}:{mm}:{ss}";
+            string res = $"{hh:00}:{mm:00}:{ss:00}";
             return res;
 
 
