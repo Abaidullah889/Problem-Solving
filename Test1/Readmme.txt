@@ -1,0 +1,8 @@
+In this test, you have to find the median from the given array.
+
+Input format
+5
+1 2 3 4 5 
+
+Output
+3
