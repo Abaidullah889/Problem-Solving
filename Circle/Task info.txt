@@ -1,0 +1,41 @@
+Circles and Squares
+Enumeration Type for Colors
+Create an enumeration type which represents colors Color. Name at least 3 colors in this type.
+(2 points)
+
+Types for Circles and Squares
+Create two other types: one for representing circles Circle, and another one for representing squares Square. Both structures should be able to store the center coordinates x , y , furthermore the radius in case of the circle and the side length in case of the square. All these are double numbers. The shapes have a color too which is given by the enumeration type above.
+(2 points)
+
+Function: Circle Inside Square
+Create a function which can be given a square and a circle as parameters. The function returns a logical value depending on whether the circle is fully inside the square. For example, the circle (x=1, y=2, r=3) is inside of square (x=2, y=0, l=11) but not inside of square (x=2, y=0, l=2).
+Hint: For example, to examine that the square contains the circle from the top, we need to compare if the topmost point of the circle (y+radius) is smaller than the topmost of the square (y+ length/2 ). Compare the 4 sides.
+(4 points)
+
+Function: Circles Inside Square
+Create a function which gets an array of circles and a square. The function should return an array on the heap that contains the circles of this array which are fully inside of this square. The returned array's size goes to the caller through an integer pointer parameter. Make sure to avoid memory leaks in the program.
+(9 points)
+
+Function: Smallest Circle by Color
+Create a function which gets an array of circles and a color as parameters and return a pointer to the smallest circle of that color from the array. In case there is no circle of that color in the array, then return a NULL pointer.
+(7 points)
+
+Organization and Header
+Place the functions in a separate source file and provide a header which contains the interface of these functions. Use the "include guard" idiom.
+(4 points)
+
+Command Line Execution
+The program can be given a file name as a command line argument. The first line of the file is a number which indicates the number of further lines. Those lines are describing circles with their x, y coordinates and radius respectively. Their color doesn't matter.
+
+./a.out circles.txt  
+  
+circles.txt  
+-----------  
+3  
+1 2 3  
+0 0 10  
+-2 5 9
+
+Square Input and Output
+Read the data (x, y coordinates, side length) of a square from the keyboard. Print the number of circles inside the square to the screen.
+(12 points)
